@@ -21,5 +21,10 @@ public class User {
      */
     private String mybook;
 
+    /**
+    *我的国家
+    */
+    private String mycountiy;
+
 
 }
