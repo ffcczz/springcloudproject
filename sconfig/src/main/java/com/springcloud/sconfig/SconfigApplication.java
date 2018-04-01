@@ -7,6 +7,11 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @SpringBootApplication
 @EnableConfigServer
 public class SconfigApplication {
+	/**
+	*bug2 for local fork
+	*/
+	private String bug2forlocal;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(SconfigApplication.class, args);
