@@ -22,6 +22,17 @@ public class User {
     private String mybook;
 
     /**
+    *是否毕业
+    */
+    private Boolean isok;
+
+    /**
+    *bug2
+    */
+    private String bug2;
+
+
+    /**
     *我的国家
     */
     private String mycountiy;
