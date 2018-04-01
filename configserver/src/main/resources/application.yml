@@ -11,5 +11,9 @@ spring:
           default-label: master
           username: xiongyongjie
           password: xyj126com
+      #默认分支
+      label: master
+      #默认拉取的文件
+      profile: dev
 server:
   port: 8888
