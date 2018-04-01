@@ -42,6 +42,10 @@ public class User {
     */
     private String bug20;
 
+    /**
+     * bug2 修改了一个bug21
+     */
+    private String bug21;
 
     
     
