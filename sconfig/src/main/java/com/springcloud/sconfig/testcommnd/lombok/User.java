@@ -31,7 +31,17 @@ public class User {
     是否毕业
     */
     private Boolean isok;
-    
+    /**
+    *bug11 分支for bug14
+    */
+    private String bug14;
+
+    /**
+     * bug11 for bug15
+     */
+    private String bug15;
+
+
     /**
     *bug2
     */
@@ -58,7 +68,7 @@ public class User {
 
 
 
-    
-    
+
+
 
 }
