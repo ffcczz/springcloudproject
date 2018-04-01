@@ -36,6 +36,13 @@ public class User {
     *bug2
     */
     private String bug2;
+
+    /**
+    *bug2分支修改了bug20
+    */
+    private String bug20;
+
+
     
     
 
