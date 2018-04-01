@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a43df394-ab9f-4236-8ec3-2159dd8e89e0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../springcloud/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java" afterPath="$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="184">
+              <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -377,7 +376,7 @@
       <workItem from="1522489871495" duration="6774000" />
       <workItem from="1522496733223" duration="2056000" />
       <workItem from="1522501954486" duration="5498000" />
-      <workItem from="1522549496922" duration="6310000" />
+      <workItem from="1522549496922" duration="6897000" />
     </task>
     <task id="LOCAL-00001" summary="添加2个属性">
       <created>1522552555076</created>
@@ -442,11 +441,32 @@
       <option name="project" value="LOCAL" />
       <updated>1522555711806</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bug2修改的提交到本地和服务器">
+      <created>1522555971493</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522555971493</updated>
+    </task>
+    <task id="LOCAL-00011" summary="bug2分支修改的bug21">
+      <created>1522556163580</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1522556163580</updated>
+    </task>
+    <task id="LOCAL-00012" summary="bug2分支修改的bug21">
+      <created>1522556481282</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1522556481282</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20638000" />
+    <option name="totallyTimeSpent" value="21225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -469,7 +489,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15266272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33609468" sideWeight="0.49784017" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28875738" sideWeight="0.49784017" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20518358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -524,7 +544,9 @@
     <MESSAGE value="bug#2" />
     <MESSAGE value="提交master1" />
     <MESSAGE value="bug2 分支修改了一个bug20" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug2 分支修改了一个bug20" />
+    <MESSAGE value="bug2修改的提交到本地和服务器" />
+    <MESSAGE value="bug2分支修改的bug21" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug2分支修改的bug21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,8 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="184">
+          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding />
         </state>
       </provider>

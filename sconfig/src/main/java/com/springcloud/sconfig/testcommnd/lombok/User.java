@@ -31,7 +31,7 @@ public class User {
     是否毕业
     */
     private Boolean isok;
-
+    
     /**
     *bug2
     */
@@ -46,8 +46,19 @@ public class User {
      *我的国家
      */
     private String mycountiy;
+    /**
+     * bug2 修改了一个bug21
+     */
+    private String bug21;
+
+    /**
+     * bug22
+     */
+    private String bug22;
 
 
 
+    
+    
 
 }
