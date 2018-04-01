@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          #basedir:
+          uri:
+          search-paths:
+          default-label:
+          username:
+          password:
+server:
+  port: 8888
