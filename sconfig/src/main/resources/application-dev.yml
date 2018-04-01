@@ -6,7 +6,7 @@ spring:
       server:
         git:
           #basedir:
-          uri:
+          uri: https://github.com/xiongyongjie/springcloudproject.git
           search-paths:
           default-label:
           username:
