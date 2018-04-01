@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a43df394-ab9f-4236-8ec3-2159dd8e89e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../springcloud/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../springcloud/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../springcloud/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java" afterPath="$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,22 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+    <leaf>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/TestUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -170,6 +161,51 @@
               <item name="springcloud" type="462c0819:PsiDirectoryNode" />
               <item name="sconfig" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="testcommnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="testcommnd" type="462c0819:PsiDirectoryNode" />
+              <item name="lombok" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,7 +377,7 @@
       <workItem from="1522489871495" duration="6774000" />
       <workItem from="1522496733223" duration="2056000" />
       <workItem from="1522501954486" duration="5498000" />
-      <workItem from="1522549496922" duration="5808000" />
+      <workItem from="1522549496922" duration="6310000" />
     </task>
     <task id="LOCAL-00001" summary="添加2个属性">
       <created>1522552555076</created>
@@ -392,11 +428,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522555397795</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="提交master1">
+      <created>1522555461404</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522555461404</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bug2 分支修改了一个bug20">
+      <created>1522555711806</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522555711806</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20136000" />
+    <option name="totallyTimeSpent" value="20638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -473,7 +523,8 @@
     <MESSAGE value="修改了另外一个bug2" />
     <MESSAGE value="bug#2" />
     <MESSAGE value="提交master1" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交master1" />
+    <MESSAGE value="bug2 分支修改了一个bug20" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug2 分支修改了一个bug20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -728,18 +779,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java">
+    <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/TestUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="140">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/TestUser.java">
+    <entry file="file://$PROJECT_DIR$/../springcloud/sconfig/src/main/java/com/springcloud/sconfig/testcommnd/lombok/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="249">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding />
         </state>
       </provider>

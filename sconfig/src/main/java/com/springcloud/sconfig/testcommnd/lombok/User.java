@@ -22,7 +22,13 @@ public class User {
     private String mybook;
 
     /**
-    *是否毕业
+     * 用户地址信息
+     */
+    private String address;
+
+
+    /**
+    是否毕业
     */
     private Boolean isok;
 
@@ -31,11 +37,17 @@ public class User {
     */
     private String bug2;
 
+    /**
+    *bug2分支修改了bug20
+    */
+    private String bug20;
 
     /**
-    *我的国家
-    */
+     *我的国家
+     */
     private String mycountiy;
+
+
 
 
 }
