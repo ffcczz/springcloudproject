@@ -31,5 +31,12 @@ public class User {
     是否毕业
     */
     private Boolean isok;
+    
+    /**
+    *bug2
+    */
+    private String bug2;
+    
+    
 
 }
