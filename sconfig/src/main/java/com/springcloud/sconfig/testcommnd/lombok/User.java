@@ -21,5 +21,14 @@ public class User {
      */
     private String mybook;
 
+    /**
+     * 用户地址信息
+     */
+    private String address;
+
+    /**
+    是否毕业
+    */
+    private Boolean isok;
 
 }
