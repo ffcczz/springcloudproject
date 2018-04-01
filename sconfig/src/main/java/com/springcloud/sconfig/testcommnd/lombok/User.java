@@ -47,6 +47,13 @@ public class User {
      */
     private String bug21;
 
+    /**
+     * bug22
+     */
+    private String bug22;
+
+
+
     
     
 
