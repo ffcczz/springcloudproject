@@ -17,6 +17,12 @@ public class SconfigApplication {
 	*/
 	private String bug2forlocal;
 
+	/**
+	*master2 修改提交
+	*/
+	private String master2;
+
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(SconfigApplication.class, args);
