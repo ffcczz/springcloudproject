@@ -32,7 +32,7 @@ public class User {
     */
     private Boolean isok;
     /**
-    *bug14
+    *bug11 分支for bug14
     */
     private String bug14;
 
