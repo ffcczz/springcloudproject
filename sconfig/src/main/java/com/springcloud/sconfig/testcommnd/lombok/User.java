@@ -66,9 +66,8 @@ public class User {
      */
     private String bug22;
 
-
-
-
-
+    public static String getMyHost() {
+        return "xxx";
+    }
 
 }
