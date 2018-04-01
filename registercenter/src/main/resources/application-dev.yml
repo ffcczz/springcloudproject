@@ -1,0 +1,6 @@
+#×¢²áÖĞĞÄÅäÖÃ
+spring:
+  application:
+    name: registercenter
+server:
+  port: 8888
