@@ -1,2 +1,5 @@
-spring.application.name=config-server
-server.port=8888
+spring:
+  application:
+    name: configserver
+server:
+  port: 9001
