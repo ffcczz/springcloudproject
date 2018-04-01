@@ -28,6 +28,12 @@ public class SconfigApplication {
 	*/
 	private String master;
 
+	/**
+	*master2 的分支提交
+	*/
+	private String master22;
+
+
 
 
 	public static void main(String[] args) {
