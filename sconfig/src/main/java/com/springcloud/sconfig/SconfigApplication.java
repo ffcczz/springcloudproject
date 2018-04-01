@@ -33,7 +33,12 @@ public class SconfigApplication {
 	*/
 	private String master22;
 
-
+	/**
+	*master push to server
+	*/
+	private String toserver;
+	
+	
 
 
 	public static void main(String[] args) {
