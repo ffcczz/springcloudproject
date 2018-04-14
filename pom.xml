@@ -17,6 +17,8 @@
 
     <modules>
         <module>sconfig</module>
+        <module>jpa</module>
+        <module>mybatis</module>
     </modules>
     <!-- 配置从哪个仓库中下载构件，即jar包 settings.xml文件properties有配置
     此处不再配置
