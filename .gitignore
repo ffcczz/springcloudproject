@@ -11,6 +11,7 @@ workspace.xml
 .sts4-cache
 
 ### IntelliJ IDEA ###
+workspace.xml
 .idea/
 .idea
 *.iws
@@ -24,3 +25,9 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+.gitignore
+.mvn/
+mvnw
+mvnw.cmd
+src/main/resources/static/
+src/main/resources/templates/

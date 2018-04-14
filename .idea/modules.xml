@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../springcloud/sconfig/sconfig.iml" filepath="$PROJECT_DIR$/../springcloud/sconfig/sconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa/jpa.iml" filepath="$PROJECT_DIR$/jpa/jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springcloud/mybatis/op.iml" filepath="$PROJECT_DIR$/../springcloud/mybatis/op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/registercenter/registercenter.iml" filepath="$PROJECT_DIR$/registercenter/registercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sconfig/sconfig.iml" filepath="$PROJECT_DIR$/sconfig/sconfig.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
     </modules>
   </component>
