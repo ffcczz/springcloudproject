@@ -1,5 +1,13 @@
 package com.mybatis.op.model;
 
+import com.mybatis.op.typehandler.Status;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
 public class CmsOrder {
     private Integer id;
 
@@ -11,43 +19,9 @@ public class CmsOrder {
 
     private String userPhone;
 
-    public Integer getId() {
-        return id;
-    }
+    private Status status;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private List<CmsSubOrder> cmsSubOrderList;
 
-    public String getOrderNo() {
-        return orderNo;
-    }
 
-    public void setOrderNo(String orderNo) {
-        this.orderNo = orderNo == null ? null : orderNo.trim();
-    }
-
-    public String getUserAddress() {
-        return userAddress;
-    }
-
-    public void setUserAddress(String userAddress) {
-        this.userAddress = userAddress == null ? null : userAddress.trim();
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
-    }
-
-    public String getUserPhone() {
-        return userPhone;
-    }
-
-    public void setUserPhone(String userPhone) {
-        this.userPhone = userPhone == null ? null : userPhone.trim();
-    }
 }
