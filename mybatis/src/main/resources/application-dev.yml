@@ -25,4 +25,17 @@ infos:
   info:
      url: http://www.baidu.com/
      data: "this is my data"
-    
+
+
+#mybatis 配置
+mybatis:
+  type-aliases-package: com.mybatis.op.model
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 3000
+
+  mapper-locations:
+    - classpath:mappers/*.xml
+  type-handlers-package: com.mybatis.op.typehandler
+

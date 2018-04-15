@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatis.op.dao.CmsOrderMapper" >
+
+  <resultMap id="BaseResultMap" type="com.mybatis.op.model.CmsOrder" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="user_address" property="userAddress" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+    <result column="orderstatus" property="status"
+            typeHandler="com.mybatis.op.typehandler.EnumCodeTypeHandler"
+            javaType="com.mybatis.op.typehandler.Status"
+    />
+  </resultMap>
+  <resultMap id="orderList" type="com.mybatis.op.model.CmsOrder" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="user_address" property="userAddress" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+    <result column="orderstatus" property="status"
+            typeHandler="com.mybatis.op.typehandler.EnumCodeTypeHandler"
+            javaType="com.mybatis.op.typehandler.Status"></result>
+  </resultMap>
+  <!-- 复杂类型查询 -->
+  <resultMap id="orderResult" type="com.mybatis.op.model.CmsOrder" >
+
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="user_address" property="userAddress" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+    <result column="orderstatus" property="status"
+            typeHandler="com.mybatis.op.typehandler.EnumCodeTypeHandler"
+            javaType="com.mybatis.op.typehandler.Status"
+    />
+    <collection property="cmsSubOrderList" ofType="com.mybatis.op.model.CmsSubOrder">
+      <id column="sub_id" property="id" jdbcType="INTEGER" />
+      <result column="sub_create_date" property="createDate" jdbcType="VARCHAR" />
+      <result column="sub_order_id" property="orderId" jdbcType="VARCHAR" />
+      <result column="sub_product_id" property="productId" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id, order_no, user_address, user_name, user_phone,orderstatus
+  </sql>
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from cms_order
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <!-- 查询list列表 -->
+  <select id="getCmsOrderListByOrderNo" resultMap="orderList" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from cms_order
+    where order_no = #{orderNo,jdbcType=VARCHAR}
+  </select>
+  <!-- 关联查询 -->
+  <select id="getCmsOrderAllById" resultMap="orderResult" parameterType="java.lang.String" >
+        select main.id,order_no,user_address,user_name,user_phone,main.orderstatus,
+        sub.id as sub_id,
+        sub.create_date as sub_create_date,
+        sub.product_id as sub_product_id
+         from cms_order main LEFT JOIN cms_sub_order sub
+         ON main.id=sub.order_id WHERE main.id= #{id,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cms_order
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert"  parameterType="com.mybatis.op.model.CmsOrder" >
+    <selectKey keyProperty="id" resultType="int" order="BEFORE">
+        select LAST_INSERT_ID()
+    </selectKey>
+    insert into cms_order (
+       order_no, user_address,
+      user_name, user_phone)
+    values (
+      #{orderNo,jdbcType=VARCHAR},
+      #{userAddress,jdbcType=VARCHAR},
+      #{userName,jdbcType=VARCHAR},
+      #{userPhone,jdbcType=VARCHAR}
+    )
+  </insert>
+
+ <insert id="insertBatch" >
+    INSERT INTO  cms_order (order_no, user_address,user_name, user_phone) VALUES
+    <foreach collection="list" item="item" separator=",">
+      (
+      #{item.orderNo,jdbcType=VARCHAR},
+      #{item.userAddress,jdbcType=VARCHAR},
+      #{item.userName,jdbcType=VARCHAR},
+      #{item.userPhone,jdbcType=VARCHAR}
+      )
+    </foreach>
+ </insert>
+
+  <insert id="insertSelective" parameterType="com.mybatis.op.model.CmsOrder" >
+    insert into cms_order
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="orderNo != null" >
+        order_no,
+      </if>
+      <if test="userAddress != null" >
+        user_address,
+      </if>
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="userPhone != null" >
+        user_phone,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="orderNo != null" >
+        #{orderNo,jdbcType=VARCHAR},
+      </if>
+      <if test="userAddress != null" >
+        #{userAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPhone != null" >
+        #{userPhone,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mybatis.op.model.CmsOrder" >
+    update cms_order
+    <set >
+      <if test="orderNo != null" >
+        order_no = #{orderNo,jdbcType=VARCHAR},
+      </if>
+      <if test="userAddress != null" >
+        user_address = #{userAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null" >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPhone != null" >
+        user_phone = #{userPhone,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mybatis.op.model.CmsOrder" >
+    update cms_order
+    set order_no = #{orderNo,jdbcType=VARCHAR},
+      user_address = #{userAddress,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_phone = #{userPhone,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
